@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h2>Hello, {{ app.user.displayName }} ({{ app.user.username }})</h2>
+                        <a class="btn btn-danger" href="{{ path('logout') }}">Se déconnecter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

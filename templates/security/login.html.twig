@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Se connecter</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+<header class="my-4">
+    <h5 class="fw-bold text-center">WebAuthn</h5>
+</header>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 offset-xl-4">
+            <div class="card bg-light mb-3">
+                <div class="card-body text-center">
+
+                    <h2 class="card-title fw-bold">Se connecter</h2>
+                    <span class="text-muted">Vous n'avez pas encore de compte ?</span>
+                    <p><a class="text-decoration-none" href="{{ path('register') }}"><b>Inscrivez-vous.</b></a></p>
+
+                    <form class="form-login">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="username" autocomplete="username webauthn" placeholder="Identifiant" required>
+                            <label for="username">Identifiant</label>
+                        </div>
+                        <button class="btn btn-lg btn-primary rounded-5 w-100" type="submit">Se connecter</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="alert alert-danger d-none" role="alert"></div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
