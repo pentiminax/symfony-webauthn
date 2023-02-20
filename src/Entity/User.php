@@ -25,11 +25,11 @@ class User implements UserInterface
     #[ORM\Column]
     private array $roles = [];
 
-    public function __construct(?string $id = null, ?string $username = null, ?string $email = null)
+    public function __construct(?string $id = null, ?string $displayName = null, ?string $username = null)
     {
         $this->id = $id;
-        $this->displayName = $username;
-        $this->username = $email;
+        $this->displayName = $displayName;
+        $this->username = $username;
     }
 
     public function getId(): ?string
