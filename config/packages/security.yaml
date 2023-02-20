@@ -18,10 +18,6 @@ security:
                 login_path: login
                 check_path: login
 
-            webauthn:
-                registration:
-                    enabled: true
-
             logout:
                 path: logout
 

@@ -35,18 +35,6 @@
             "./migrations/.gitignore"
         ]
     },
-    "nyholm/psr7": {
-        "version": "1.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "1.0",
-            "ref": "0cd4d2d0e7f646fda75f9944f747a56e6ed13d4c"
-        },
-        "files": [
-            "./config/packages/nyholm_psr7.yaml"
-        ]
-    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {
@@ -72,9 +60,6 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
-    },
-    "spomky-labs/cbor-bundle": {
-        "version": "v3.0.0"
     },
     "symfony/console": {
         "version": "6.2",
@@ -230,18 +215,6 @@
             "./templates/base.html.twig"
         ]
     },
-    "symfony/uid": {
-        "version": "6.2",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "main",
-            "version": "6.2",
-            "ref": "d294ad4add3e15d7eb1bae0221588ca89b38e558"
-        },
-        "files": [
-            "./config/packages/uid.yaml"
-        ]
-    },
     "symfony/validator": {
         "version": "6.2",
         "recipe": {
@@ -300,18 +273,5 @@
     },
     "twig/extra-bundle": {
         "version": "v3.5.1"
-    },
-    "web-auth/webauthn-symfony-bundle": {
-        "version": "4.5",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "main",
-            "version": "3.0",
-            "ref": "9926090a80c2cceeffe96e6c3312b397ea55d4a7"
-        },
-        "files": [
-            "./config/packages/webauthn.yaml",
-            "./config/routes/webauthn_routes.yaml"
-        ]
     }
 }
